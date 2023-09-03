@@ -70,7 +70,7 @@ class SalaryController {
     @ResponseStatus(HttpStatus.OK)
     @GetMapping("/{language}/get/{id}")
     public InternalApiResponse<SalaryResponse> getSalary(@PathVariable("language") Language language,
-                                                             @PathVariable Long id) {
+                                                             @PathVariable("id") Long id) {
         log.debug("[{}][getSalary] -> request: {}", this.getClass().getSimpleName(), id);
         PersonalSalary salary = salaryRepositoryService.getSalary(language, id);
         SalaryResponse salaryResponse= convertSalaryResponse(salary);

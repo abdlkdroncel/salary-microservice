@@ -29,7 +29,7 @@ spring:
       hibernate:
         default_schema: personal_salary
   datasource:
-    url: "jdbc:postgresql://postgres:5432/hr"
+    url: "jdbc:postgresql://localhost:5432/hr"
     username: postgres
     password: 367300
 
@@ -51,9 +51,9 @@ spring:
       hibernate:
         default_schema: personal_salary
   datasource:
-    url: "jdbc:postgresql://postgres:5432/hr"
+    url: "jdbc:postgresql://localhost:5432/hr"
     username: postgres
-    password: Asdf@1234
+    password: 367300
 
 eureka:
   client:
